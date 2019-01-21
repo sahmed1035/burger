@@ -1,0 +1,5 @@
+ users input the names of burgers they'd like to eat.
+ user submits a burger's name, the app will display the burger on the left side of the page.
+ left side waiting area with`Devour it!` button. waiting to be devoured.
+ When the user clicks Devour it!` button, the burger will move to the right side of the page.
+ store every burger in a database, whether devoured or not.

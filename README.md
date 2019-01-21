@@ -23,6 +23,7 @@ These are the methods you will need to use in order to retrieve and store data i
      * `updateOne()`
   
 ## Getting Started
+This app uses Node and MySQL to query and route data in, and Handlebars to generate the HTML.
 Follow the instruction for installing the packages. After cloning, run the app locally or deploy to any cloud servers. This app uses express.js to handle routing. This app uses MSQL database to save the data. 
 
 ### Installing:
