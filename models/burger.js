@@ -21,12 +21,12 @@ var burger = {
     orm.update("burgers", objColVals, condition, function(res) {
       cb(res);
     });
-  },
-  delete: function(condition, cb) { //delete a burger within our database from burgers table
-    orm.delete("burgers", condition, function(res) { 
-      cb(res);
-    });
   }
+  // delete: function(condition, cb) { //delete a burger within our database from burgers table
+  //   orm.delete("burgers", condition, function(res) { 
+  //     cb(res);
+  //   });
+  // }
 };
 
 // Export the database functions for the controller burgers_controller.js).

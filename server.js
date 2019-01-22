@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 
 var app = express();
-
+const path = require('path')
 var PORT = process.env.PORT || 3000;
 
 
@@ -15,20 +15,17 @@ var PORT = process.env.PORT || 3000;
 app.use(express.static(process.cwd()+"public"));
 
 // Parse application body as JSON
-// app.use(express.urlencoded({ extended: true }));
-// app.use(express.json());
+
 app.use(bodyParser.urlencoded({
   extended: false
 }));
-
+app.use(express.json());
 // override with POST having ?_method=DELETE
 app.use(methodOverride('_method'));
 // Set Handlebars.
 var exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({defaultLayout:'main'}));
 
-// Set Handlebars.
-// var exphbs = require("express-handlebars");
 
 // app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
