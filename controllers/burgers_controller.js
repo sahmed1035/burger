@@ -25,10 +25,11 @@ router.post("/burgers/create", function(req, res) {
   burger.create([
     "burger_name", "devoured" //creating new burger
   ], [
-    req.body.burger_name, req.body.devoured
+    req.body.burger_name, "0"
   ], function(result) {
-    // Send back the ID of the new quote
-    res.json({ id: result.insertId });
+    // Send back the ID of the new burger
+    // res.json({ id: result.insertId });
+    res.redirect('/burgers');
   });
 });
 
