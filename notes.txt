@@ -24,3 +24,25 @@ Setup the `main.handlebars` file so it's able to be used by Handlebars.
 Setup the `index.handlebars` to have the template that Handlebars can render onto.
 
 Create a button in `index.handlebars` that will submit the user input into the database.
+
+
+New Burger:
+1. Add a new burger with devoured = false.
+2. clicking "Add burger" button without burger name should not create any empty entry in the database. 
+3. clicking "Add burger" button without burger name should not create any buttons on the html.
+4. Entries manually deleting in the db should also remove the "devoured it" button in the front-end.
+
+Not devoured:
+1. when the "devoure it" button is clicked, burger with that button id and the button should disapear.
+2. the "devoured" in the db should change to true. 
+3. the same burger should appear in the right-side-div under devoured.
+
+devoured:
+1. this div should have an id to display burgers with the "devoured = true".
+
+LOGIC:
+when "devoure it" is clicked, UPDATE "devoured" in the db to '1'.
+
+if(devoured = true) => hide burger and button from left-div. show burger_name in the right-div.
+
+---need to fix css as well. 
