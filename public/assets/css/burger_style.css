@@ -1,11 +1,19 @@
 .jumbotron{
-  background-color: blue;
+  background-image: url("../img/resized-burger1.jpg");
+  height:280px;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  border-bottom:1px solid #ff6a00;
+  color: white;
 }
+#mainHead {color: white;}
 
 li {
     padding: 5px;
     margin: 5px;
-    background: red;
+    width: 80%;
+    background: rgb(0, 5, 1);
+    color: white;
   }
   
   .label {
