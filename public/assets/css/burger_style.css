@@ -12,21 +12,30 @@ li {
     padding: 5px;
     margin: 5px;
     width: 80%;
-    background: rgb(0, 5, 1);
-    color: white;
+    background: green;
+    color:white;
   }
   
   .label {
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 28px;
+    color: white;
   }
   
   .update-form {
     padding: 5px;
     margin: 5px;
-    background: aqua;
+    background:black;
   }
   
   .form-group {
     margin-bottom: 5px;
   }
-  
+  .btn1{
+    margin-right: 1px;
+  }
+  /* .input-group-btn {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    width: 1%;
+    vertical-align: middle;
+  } */
