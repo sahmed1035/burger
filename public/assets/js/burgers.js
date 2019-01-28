@@ -4,12 +4,15 @@ $(function () {
   $(".change-devour").on("click", function (event) {
     var id = $(this).data("id");
     var newDevour = $(this).data("newdevour");
-    // newDevour.hide();
+    /////////////////////////////////////////////
+    //$(".change-devour").val().hide();
+///////////////////////////////////////////////////////////
 
     var newDevourState = {
       devoured: newDevour
+      
     };
-
+   
     // Send the PUT request.
     $.ajax("/burgers/update/" + id, {
       type: "PUT",
@@ -17,9 +20,13 @@ $(function () {
     }).then(
       function () {
         console.log("changed devour to", newDevour);
+        
         // Reload the page to get the updated list
+        
         location.reload();
+       
       }
+      
     );
   });
 
